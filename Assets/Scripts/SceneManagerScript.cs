@@ -48,7 +48,7 @@ public class SceneManagerScript : MonoBehaviour
             case 1.1f:
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
-                // toolbox appear
+                // toolbox appear ^
                 obj_s2_1.SetActive(true);
                 obj_s2_2.SetActive(true);
                 obj_s2_3.SetActive(true);
@@ -62,7 +62,12 @@ public class SceneManagerScript : MonoBehaviour
                 obj_s2_11.SetActive(true);
                 S2Button = true;
                 // hand hint appear
-                // main object appear
+                // main object appear ^
+                break;
+            case 2:
+                break;
+            case 2.1:
+                // to 3
                 break;
             default:
                 break;

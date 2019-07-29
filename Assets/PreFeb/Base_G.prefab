@@ -107,7 +107,7 @@ MonoBehaviour:
   lockWhenAttached: 1
   matchAnchorMotionWhileAttaching: 1
   anchorLerpCoeffPerSec: 20
-  anchorRotation: 0
+  anchorRotation: 1
   interactionBehaviour: {fileID: -1105422748814249579}
   _interactionBehaviourIsNull: 0
   detachWhenGrasped: 1
