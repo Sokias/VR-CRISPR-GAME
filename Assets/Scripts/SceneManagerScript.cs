@@ -37,7 +37,7 @@ public class SceneManagerScript : MonoBehaviour
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear
-                GameObject.FindGameObjectWithTag("S2OBJ").GetComponent<MeshRenderer>().enabled = true;
+                GameObject.FindGameObjectWithTag("S2OBJ").SetActive(true);
                 S2Button = true;
                 // hand hint appear
                 // main object appear
