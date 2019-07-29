@@ -31,6 +31,8 @@ public class SceneManagerScript : MonoBehaviour
                 changeScreenMaterial_1();
                 break;
             case 1:
+                break;
+            case 1.1:
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear
@@ -56,6 +58,7 @@ public class SceneManagerScript : MonoBehaviour
         StartCoroutine(changeMaterialOfScreen(m1_2, 5f));
         StartCoroutine(changeMaterialOfScreen(m1_3, 6f));
         StartCoroutine(changeMaterialOfScreen(m1_4, 5f));
+        SCENE_NUMBER = 1.1f;
     }
 
     void changeScreenMaterial_2()
