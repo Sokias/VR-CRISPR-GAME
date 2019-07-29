@@ -22,6 +22,16 @@ public class SceneManagerScript : MonoBehaviour
         
     }
 
+    public GameObject obj_s2_1;
+    public GameObject obj_s2_2;
+    public GameObject obj_s2_3;
+    public GameObject obj_s2_4;
+    public GameObject obj_s2_5;
+    public GameObject obj_s2_6;
+    public GameObject obj_s2_7;
+    public GameObject obj_s2_8;
+    public GameObject obj_s2_9;
+
     public void buildScene()
     {
         switch (SCENE_NUMBER)
@@ -37,7 +47,14 @@ public class SceneManagerScript : MonoBehaviour
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear
-                GameObject.FindWithTag("S2OBJ").SetActive(true);
+                obj_s2_1.SetActive(true);
+                obj_s2_2.SetActive(true);
+                obj_s2_3.SetActive(true);
+                obj_s2_4.SetActive(true);
+                obj_s2_5.SetActive(true);
+                obj_s2_6.SetActive(true);
+                obj_s2_8.SetActive(true);
+                obj_s2_9.SetActive(true);
                 S2Button = true;
                 // hand hint appear
                 // main object appear

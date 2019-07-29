@@ -2279,7 +2279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_TagString
@@ -8890,7 +8890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_TagString
@@ -21506,7 +21506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_TagString
@@ -25875,6 +25875,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screen0: {fileID: 142100009}
   screen: {fileID: 814786217}
+  obj_s2_1: {fileID: 0}
+  obj_s2_2: {fileID: 0}
+  obj_s2_3: {fileID: 0}
+  obj_s2_4: {fileID: 0}
+  obj_s2_5: {fileID: 0}
+  obj_s2_6: {fileID: 0}
+  obj_s2_7: {fileID: 0}
+  obj_s2_8: {fileID: 0}
+  obj_s2_9: {fileID: 0}
   m1_1: {fileID: 2100000, guid: ed47571ef1b12694da32b2026e73cb3e, type: 2}
   m1_2: {fileID: 2100000, guid: fcb2c65b7b0daf6478848b1a6395eab7, type: 2}
   m1_3: {fileID: 2100000, guid: c411699cf0f6bc4418eb747b3a73cb5e, type: 2}
@@ -29796,7 +29805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1329088948137194, guid: df84af96020c94b4695aec5c3427db16, type: 3}
       propertyPath: m_TagString
