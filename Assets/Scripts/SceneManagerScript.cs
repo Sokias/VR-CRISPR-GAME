@@ -6,6 +6,7 @@ public class SceneManagerScript : MonoBehaviour
 {
 
     public static float SCENE_NUMBER = 0;
+    public static bool S2Button = false;
     public GameObject screen0;
     public GameObject screen;
 
@@ -36,6 +37,8 @@ public class SceneManagerScript : MonoBehaviour
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear
+                GameObject.FindGameObjectWithTag("S2OBJ").GetComponent<MeshRenderer>().enabled = true;
+                S2Button = true;
                 // hand hint appear
                 // main object appear
                 break;
@@ -58,8 +61,9 @@ public class SceneManagerScript : MonoBehaviour
         StartCoroutine(changeMaterialOfScreen(m1_2, 6f));
         StartCoroutine(changeMaterialOfScreen(m1_3, 9f));
         StartCoroutine(changeMaterialOfScreen(m1_4, 12f));
-        SCENE_NUMBER = 1.1f;
+        Invoke("changeSceneNum_1", 13f);
     }
+    void changeSceneNum_1() { SCENE_NUMBER = 1.1f; }
 
     void changeScreenMaterial_2()
     {
