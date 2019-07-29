@@ -20,7 +20,7 @@ public class ButtonBehavior : MonoBehaviour
     public GameObject C;
     public GameObject G;
     public GameObject U;
-    Vector3 v = new Vector3(0, 0, 1);
+    Vector3 v = new Vector3(0, 1.4f, 1);
     Quaternion q = new Quaternion();
 
     public void onPressA()
