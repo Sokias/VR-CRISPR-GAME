@@ -1588,8 +1588,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142100009}
   m_LocalRotation: {x: -0.094221205, y: -0, z: 0.9955513, w: 0}
-  m_LocalPosition: {x: -7.11, y: 2.68, z: 5.64}
-  m_LocalScale: {x: 7, y: 4, z: 0.001}
+  m_LocalPosition: {x: -5.01, y: 1.72, z: 4.68}
+  m_LocalScale: {x: 4, y: 3, z: 0.001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -4001,8 +4001,8 @@ Camera:
   m_GameObject: {fileID: 278712403}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.15522274, g: 0.16667834, b: 0.24264705, a: 0.019607844}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -12280,8 +12280,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814786217}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.3, y: 5.92, z: 7.65}
-  m_LocalScale: {x: 16, y: 9, z: 0.001}
+  m_LocalPosition: {x: 0.3, y: 3.65, z: 7.65}
+  m_LocalScale: {x: 10, y: 6, z: 0.001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -25099,6 +25099,7 @@ GameObject:
   - component: {fileID: 1766774248}
   - component: {fileID: 1766774247}
   - component: {fileID: 1766774246}
+  - component: {fileID: 1766774243}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -25106,6 +25107,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1766774243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766774242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bb171465f4bd84c83b12355ca586f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screen0: {fileID: 142100009}
+  screen: {fileID: 814786217}
+  m1_1: {fileID: 2100000, guid: ed47571ef1b12694da32b2026e73cb3e, type: 2}
+  m1_2: {fileID: 2100000, guid: fcb2c65b7b0daf6478848b1a6395eab7, type: 2}
+  m1_3: {fileID: 2100000, guid: c411699cf0f6bc4418eb747b3a73cb5e, type: 2}
+  m1_4: {fileID: 2100000, guid: a70ebc0702befaf4a81b4b9dd4c6bf97, type: 2}
 --- !u!4 &1766774244
 Transform:
   m_ObjectHideFlags: 0
