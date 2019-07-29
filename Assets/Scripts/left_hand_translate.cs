@@ -6,9 +6,9 @@ using Leap.Unity;
 
 public class left_hand_translate : MonoBehaviour
 {
-    Vector3 pinchStartPosition;
+    float pinchStartPosition;
     bool isPinch = false;
-    Hand leftHand;
+    public GameObject leftHand;
 
     // Start is called before the first frame update
     void Start()
@@ -21,21 +21,15 @@ public class left_hand_translate : MonoBehaviour
     {
         if (isPinch)
         {
-            Vector3 transVec = leftHand.GetPinchPosition() - pinchStartPosition;
-            transform.position += transVec;
+            float transVec = leftHand.transform.position.x - pinchStartPosition;
+            transform.position = new Vector3(transform.position.x+transVec*0.2f,transform.position.y,transform.position.z);
         }
     }
 
     public void startPinch()
     {
         isPinch = true;
-        List<Hand> hands = new Controller().Frame().Hands;
-        leftHand = hands[0];
-        if (hands.Count == 2)
-        {
-            leftHand = hands[1];
-        }
-        pinchStartPosition = leftHand.GetPinchPosition();
+        pinchStartPosition = leftHand.transform.position.x;
     }
 
     public void endPinch()
