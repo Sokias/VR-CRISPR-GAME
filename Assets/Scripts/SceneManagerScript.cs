@@ -32,7 +32,7 @@ public class SceneManagerScript : MonoBehaviour
                 break;
             case 1:
                 break;
-            case 1.1:
+            case 1.1f:
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear
