@@ -66,7 +66,7 @@ public class SceneManagerScript : MonoBehaviour
                 break;
             case 2:
                 break;
-            case 2.1:
+            case 2.1f:
                 // to 3
                 break;
             default:

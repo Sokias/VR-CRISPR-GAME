@@ -14,7 +14,7 @@ public class S2WIN : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (S2already == 15) SceneManagerScript.SCENE_NUNMBER = 2.1;
+        if (S2already == 15) SceneManagerScript.SCENE_NUMBER = 2.1f;
     }
 
 }
