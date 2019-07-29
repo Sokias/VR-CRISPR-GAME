@@ -32,7 +32,7 @@ public class SceneManagerScript : MonoBehaviour
                 break;
             case 1:
                 break;
-            case 1.1:
+            case 1.1f:
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear
@@ -55,17 +55,17 @@ public class SceneManagerScript : MonoBehaviour
     void changeScreenMaterial_1()
     {
         StartCoroutine(changeMaterialOfScreen(m1_1, 3f));
-        StartCoroutine(changeMaterialOfScreen(m1_2, 5f));
-        StartCoroutine(changeMaterialOfScreen(m1_3, 6f));
-        StartCoroutine(changeMaterialOfScreen(m1_4, 5f));
+        StartCoroutine(changeMaterialOfScreen(m1_2, 6f));
+        StartCoroutine(changeMaterialOfScreen(m1_3, 9f));
+        StartCoroutine(changeMaterialOfScreen(m1_4, 12f));
         SCENE_NUMBER = 1.1f;
     }
 
     void changeScreenMaterial_2()
     {
         StartCoroutine(changeMaterialOfScreen(m2_1, 3f));
-        StartCoroutine(changeMaterialOfScreen(m2_2, 5f));
-        StartCoroutine(changeMaterialOfScreen(m2_3, 6f));
+        StartCoroutine(changeMaterialOfScreen(m2_2, 8f));
+        StartCoroutine(changeMaterialOfScreen(m2_3, 12f));
     }
 
     IEnumerator changeMaterialOfScreen(Material material,float time)
