@@ -65,9 +65,11 @@ public class SceneManagerScript : MonoBehaviour
                 // main object appear ^
                 break;
             case 2:
+                // print("2");
                 break;
             case 2.1f:
                 // to 3
+                SCENE_NUMBER = 3;
                 break;
             default:
                 break;

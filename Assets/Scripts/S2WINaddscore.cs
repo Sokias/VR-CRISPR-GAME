@@ -19,11 +19,13 @@ public class S2WINaddscore : MonoBehaviour
     public void addScore()
     {
         S2WIN.S2already += 1;
+        print(S2WIN.S2already);
     }
 
     public void minScore()
     {
         S2WIN.S2already -= 1;
+        print(S2WIN.S2already);
     }
 
 }
