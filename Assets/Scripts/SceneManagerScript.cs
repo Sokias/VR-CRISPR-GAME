@@ -31,6 +31,8 @@ public class SceneManagerScript : MonoBehaviour
     public GameObject obj_s2_7;
     public GameObject obj_s2_8;
     public GameObject obj_s2_9;
+    public GameObject obj_s2_10;
+    public GameObject obj_s2_11;
 
     public void buildScene()
     {
@@ -53,8 +55,11 @@ public class SceneManagerScript : MonoBehaviour
                 obj_s2_4.SetActive(true);
                 obj_s2_5.SetActive(true);
                 obj_s2_6.SetActive(true);
+                obj_s2_7.SetActive(true);
                 obj_s2_8.SetActive(true);
                 obj_s2_9.SetActive(true);
+                obj_s2_10.SetActive(true);
+                obj_s2_11.SetActive(true);
                 S2Button = true;
                 // hand hint appear
                 // main object appear
