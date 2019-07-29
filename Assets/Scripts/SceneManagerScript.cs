@@ -5,7 +5,7 @@ using UnityEngine;
 public class SceneManagerScript : MonoBehaviour
 {
 
-    public static int SCENE_NUMBER = 0;
+    public static float SCENE_NUMBER = 0;
     public GameObject screen0;
     public GameObject screen;
 
@@ -27,8 +27,15 @@ public class SceneManagerScript : MonoBehaviour
         {
             case 0:
                 GameObject.Destroy(screen0);
-                changeScreenMaterial_1();
                 SCENE_NUMBER = 1;
+                changeScreenMaterial_1();
+                break;
+            case 1:
+                SCENE_NUMBER = 2;
+                changeScreenMaterial_2();
+                // toolbox appear
+                // hand hint appear
+                // main object appear
                 break;
             default:
                 break;
@@ -39,12 +46,23 @@ public class SceneManagerScript : MonoBehaviour
     public Material m1_2;
     public Material m1_3;
     public Material m1_4;
+    public Material m2_1;
+    public Material m2_2;
+    public Material m2_3;
+
     void changeScreenMaterial_1()
     {
         StartCoroutine(changeMaterialOfScreen(m1_1, 3f));
         StartCoroutine(changeMaterialOfScreen(m1_2, 5f));
         StartCoroutine(changeMaterialOfScreen(m1_3, 6f));
         StartCoroutine(changeMaterialOfScreen(m1_4, 5f));
+    }
+
+    void changeScreenMaterial_2()
+    {
+        StartCoroutine(changeMaterialOfScreen(m2_1, 3f));
+        StartCoroutine(changeMaterialOfScreen(m2_2, 5f));
+        StartCoroutine(changeMaterialOfScreen(m2_3, 6f));
     }
 
     IEnumerator changeMaterialOfScreen(Material material,float time)
