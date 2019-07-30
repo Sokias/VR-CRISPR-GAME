@@ -101,6 +101,7 @@ public class SceneManagerScript : MonoBehaviour
                 //disshow
                 obj_s3_1.SetActive(false);
                 obj_s3_2.SetActive(false);
+                screenh.GetComponent<MeshRenderer>().material = mh_4;
                 break;
             default:
                 break;
