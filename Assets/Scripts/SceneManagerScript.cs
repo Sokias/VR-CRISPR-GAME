@@ -50,7 +50,7 @@ public class SceneManagerScript : MonoBehaviour
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear ^
-                Invoke("SetActive_2", 11);
+                Invoke("SetActive_2", 5);
                 // hand hint appear
                 // main object appear ^
                 break;
@@ -104,7 +104,7 @@ public class SceneManagerScript : MonoBehaviour
         SCENE_NUMBER = 4;
     }
 
-    void SetActice_2()
+    void SetActive_2()
     {
         obj_s2_1.SetActive(true);
         obj_s2_2.SetActive(true);
@@ -153,8 +153,8 @@ public class SceneManagerScript : MonoBehaviour
     void changeScreenMaterial_2()
     {
         StartCoroutine(changeMaterialOfScreen(m2_1, 1f));
-        StartCoroutine(changeMaterialOfScreen(m2_2, 5f));
-        StartCoroutine(changeMaterialOfScreen(m2_3, 10f));
+        StartCoroutine(changeMaterialOfScreen(m2_2, 4f));
+        StartCoroutine(changeMaterialOfScreen(m2_3, 6f));
     }
 
     void changeScreenMaterial_3()
