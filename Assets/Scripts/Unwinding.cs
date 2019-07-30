@@ -27,11 +27,11 @@ public class Unwinding : MonoBehaviour
                 {
                     if (go.transform.GetChild(i).transform.position.y > 0)
                     {
-                        go.transform.GetChild(i).transform.parent.transform.position += new Vector3(0f, 1f, 0f);
+                        go.transform.GetChild(i).transform.parent.transform.position += new Vector3(0f, 10f, 0f);
                     }
                     else
                     {
-                        go.transform.GetChild(i).transform.parent.transform.position += new Vector3(0f, -1f, 0f);
+                        go.transform.GetChild(i).transform.parent.transform.position += new Vector3(0f, -10f, 0f);
                     }
                 }
             }

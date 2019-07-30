@@ -9,6 +9,7 @@ public class SceneManagerScript : MonoBehaviour
     public static bool S2Button = false;
     public GameObject screen0;
     public GameObject screen;
+    public static int segNum;
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +84,10 @@ public class SceneManagerScript : MonoBehaviour
                 obj_s2_9.SetActive(false);
                 obj_s2_10.SetActive(false);
                 obj_s2_11.SetActive(false);
+                foreach(GameObject go in ButtonBehavior.gos)
+                {
+                    go.SetActive(false);
+                }
                 ////
                 obj_s3_1.SetActive(true);
                 obj_s3_2.SetActive(true);

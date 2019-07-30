@@ -17,7 +17,20 @@ public class yCube7 : MonoBehaviour
     }
     public void OnTriggerEnter(Collider c)
     {
+        rotation.isTriggerEntered = true;
+        Invoke("diaoyong", 4);
+    }
+
+    void diaoyong()
+    {
         Unwinding.unwindDNASeg(7);
+    }
+
+    IEnumerator timingUnwind(int index, float time)
+    {
+        yield return new WaitForSeconds(time); print("success");
+
+        Unwinding.unwindDNASeg(index);
     }
 
 }

@@ -7,6 +7,7 @@ public class rotation : MonoBehaviour
     public GameObject pb;
     private float rotate;
     bool isStop = false;
+    public static bool isTriggerEntered = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class rotation : MonoBehaviour
             pb.transform.Rotate(new Vector3(1f,0f,0f));
 
         }
-        if (Input.GetKey(KeyCode.A))
+        if (isTriggerEntered)
         {
             isStop = true;
         }

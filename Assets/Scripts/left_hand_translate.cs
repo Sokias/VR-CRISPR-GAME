@@ -21,19 +21,25 @@ public class left_hand_translate : MonoBehaviour
     {
         if (isPinch)
         {
-            float transVec = leftHand.transform.position.x - pinchStartPosition;
+            float transVec = leftHand.transform.GetChild(0).position.x - pinchStartPosition;
+            // print("1:"+ leftHand.transform.position.x);
+            // print("2:"+ transVec);
             transform.position = new Vector3(transform.position.x+transVec*0.2f,transform.position.y,transform.position.z);
+            // print("3:"+ transform.position);
         }
     }
 
     public void startPinch()
     {
         isPinch = true;
-        pinchStartPosition = leftHand.transform.position.x;
+        //print(isPinch);
+        //Unwinding.unwindDNASeg(6);
+        pinchStartPosition = leftHand.transform.GetChild(0).position.x;
     }
 
     public void endPinch()
     {
         isPinch = false;
+        //print(isPinch);
     }
 }
