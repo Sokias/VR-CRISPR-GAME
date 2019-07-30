@@ -22,14 +22,6 @@ public class SceneManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count >= 0) {
-            count += 1;
-            foreach(Transform t in lgo)
-            {
-                t.position += new Vector3(0.1f, 0f, 0f);
-            }
-        }
-        if(count == 150) { count = -1; }
 
     }
 
@@ -110,73 +102,8 @@ public class SceneManagerScript : MonoBehaviour
 
     public static int cutNum = 0; //can be 1,4,6,7,8 6=success
 
-    List<Transform> lgo = new List<Transform>();
-    int count = -1;
-
     void mergeDNA()
     {
-        switch (cutNum)
-        {
-            case (4):
-                for(int i = 0; i < mega.transform.childCount; i++)
-                {
-                    if (mega.transform.GetChild(i).name == "Com_1@8,1-15" || 
-                        mega.transform.GetChild(i).name == "Com_2@23,16-30" || 
-                        mega.transform.GetChild(i).name == "Com_3@38,31-45")
-                    {
-                        lgo.Add(mega.transform.GetChild(i));
-                    }
-                }
-                break;
-            case (6):
-                for (int i = 0; i < mega.transform.childCount; i++)
-                {
-                    if (mega.transform.GetChild(i).name == "Com_1@8,1-15" ||
-                        mega.transform.GetChild(i).name == "Com_2@23,16-30" ||
-                        mega.transform.GetChild(i).name == "Com_3@38,31-45" ||
-                        mega.transform.GetChild(i).name == "Com_4@52,46-60" ||
-                        mega.transform.GetChild(i).name == "Com_5@66,61-75")
-                    {
-                        lgo.Add(mega.transform.GetChild(i));
-                    }
-                }
-                break;
-            case (7):
-                for (int i = 0; i < mega.transform.childCount; i++)
-                {
-                    if (mega.transform.GetChild(i).name == "Com_1@8,1-15" ||
-                        mega.transform.GetChild(i).name == "Com_2@23,16-30" ||
-                        mega.transform.GetChild(i).name == "Com_3@38,31-45" ||
-                        mega.transform.GetChild(i).name == "Com_4@52,46-60" ||
-                        mega.transform.GetChild(i).name == "Com_5@66,61-75" ||
-                        mega.transform.GetChild(i).name == "Com_6@80,76-90" ||
-                        mega.transform.GetChild(i).name == "Com_7@99,90-107" ||
-                        mega.transform.GetChild(i).name == "Com_8@8,1-15")
-                    {
-                        lgo.Add(mega.transform.GetChild(i));
-                    }
-                }
-                break;
-            case (8):
-                for (int i = 0; i < mega.transform.childCount; i++)
-                {
-                    if (mega.transform.GetChild(i).name == "Com_1@8,1-15" ||
-                        mega.transform.GetChild(i).name == "Com_2@23,16-30" ||
-                        mega.transform.GetChild(i).name == "Com_3@38,31-45" ||
-                        mega.transform.GetChild(i).name == "Com_4@52,46-60" ||
-                        mega.transform.GetChild(i).name == "Com_5@66,61-75" ||
-                        mega.transform.GetChild(i).name == "Com_6@80,76-90" ||
-                        mega.transform.GetChild(i).name == "Com_7@99,90-107" ||
-                        mega.transform.GetChild(i).name == "Com_8@8,1-15" ||
-                        mega.transform.GetChild(i).name == "Com_9@23,16-30" ||
-                        mega.transform.GetChild(i).name == "Com_10@38,31-45")
-                    {
-                        lgo.Add(mega.transform.GetChild(i));
-                    }
-                }
-                break;
-        }
-
         SCENE_NUMBER = 4;
     }
 
