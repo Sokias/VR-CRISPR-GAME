@@ -39,6 +39,10 @@ public class SceneManagerScript : MonoBehaviour
     public GameObject obj_s3_1;
     public GameObject obj_s3_2;
     public GameObject obj_s4_1;
+    public GameObject obj_s4_2;
+    public GameObject obj_s4_3;
+    public GameObject obj_s4_4;
+
 
     public void buildScene()
     {
@@ -91,6 +95,9 @@ public class SceneManagerScript : MonoBehaviour
                 SCENE_NUMBER = 4.1f;
                 //show
                 obj_s4_1.SetActive(true);
+                obj_s4_2.SetActive(true);
+                obj_s4_3.SetActive(true);
+                obj_s4_4.SetActive(true);
                 //disshow
                 obj_s3_1.SetActive(false);
                 obj_s3_2.SetActive(false);
