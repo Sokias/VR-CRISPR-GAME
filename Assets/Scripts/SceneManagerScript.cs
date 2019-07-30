@@ -70,6 +70,17 @@ public class SceneManagerScript : MonoBehaviour
             case 2.1f:
                 // to 3
                 SCENE_NUMBER = 3;
+                obj_s2_1.SetActive(false);
+                obj_s2_2.SetActive(false);
+                obj_s2_3.SetActive(false);
+                obj_s2_4.SetActive(false);
+                obj_s2_5.SetActive(false);
+                obj_s2_6.SetActive(false);
+                obj_s2_7.SetActive(false);
+                obj_s2_8.SetActive(false);
+                obj_s2_9.SetActive(false);
+                obj_s2_10.SetActive(false);
+                obj_s2_11.SetActive(false);
                 break;
             default:
                 break;
