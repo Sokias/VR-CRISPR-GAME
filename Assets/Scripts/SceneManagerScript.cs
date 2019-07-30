@@ -98,7 +98,7 @@ public class SceneManagerScript : MonoBehaviour
         }
     }
 
-    public static int cutNum = 0; //can be 1,4,6,7,8
+    public static int cutNum = 0; //can be 1,4,6,7,8 6=success
     void mergeDNA()
     {
         switch (cutNum)
@@ -159,7 +159,7 @@ public class SceneManagerScript : MonoBehaviour
         StartCoroutine(changeMaterialOfScreen(m1_2, 4f));
         StartCoroutine(changeMaterialOfScreen(m1_3, 6f));
         StartCoroutine(changeMaterialOfScreen(m1_4, 9f));
-        Invoke("changeSceneNum_1", 13f);
+        Invoke("changeSceneNum_1", 9f);
     }
     void changeSceneNum_1() { SCENE_NUMBER = 1.1f; }
 
