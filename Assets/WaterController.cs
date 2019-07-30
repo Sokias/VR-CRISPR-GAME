@@ -11,7 +11,7 @@ public class WaterController : MonoBehaviour
     //the "gravitational acceleration"
     public float dropAcceleration = -0.23f;
     //the largest size of the ball
-    public float maximumBallSize = 1f;
+    public float maximumBallSize = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +31,6 @@ public class WaterController : MonoBehaviour
         if(this.canDrop == true)
         {
             drop();
-            checkPosition();
         }
     }
 
@@ -65,11 +64,6 @@ public class WaterController : MonoBehaviour
         //drops in -y position
         Vector3 moreVelocity = new Vector3(0, dropAcceleration, 0);
         r.velocity += moreVelocity;
-    }
-
-    void checkPosition()
-    {
-
     }
 
     private void OnTriggerEnter(Collider other)

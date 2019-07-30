@@ -37,6 +37,7 @@ public class SceneManagerScript : MonoBehaviour
     public GameObject obj_s2_11;
     public GameObject obj_s3_1;
     public GameObject obj_s3_2;
+    public GameObject obj_s4_1;
 
     public void buildScene()
     {
@@ -88,7 +89,7 @@ public class SceneManagerScript : MonoBehaviour
                 changeScreenMaterial_5();
                 SCENE_NUMBER = 4.1f;
                 //show
-
+                obj_s4_1.SetActive(true);
                 //disshow
                 obj_s3_1.SetActive(false);
                 obj_s3_2.SetActive(false);
