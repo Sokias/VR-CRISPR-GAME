@@ -9,6 +9,7 @@ public class SceneManagerScript : MonoBehaviour
     public static bool S2Button = false;
     public GameObject screen0;
     public GameObject screen;
+    public GameObject screenh;
     public static int segNum;
 
     // Start is called before the first frame update
@@ -52,6 +53,7 @@ public class SceneManagerScript : MonoBehaviour
                 // toolbox appear ^
                 Invoke("SetActive_2", 5);
                 // hand hint appear
+                screenh.GetComponent<MeshRenderer>().material = mh_1;
                 // main object appear ^
                 break;
             case 2.1f:
@@ -75,10 +77,12 @@ public class SceneManagerScript : MonoBehaviour
                 ////
                 changeScreenMaterial_3();
                 Invoke("SetActive_3", 11);
+                screenh.GetComponent<MeshRenderer>().material = mh_2;
                 break;
             case 3.1f:
                 changeScreenMaterial_4();
                 Invoke("mergeDNA", 10f);
+                screenh.GetComponent<MeshRenderer>().material = mh_3;
                 break;
             case 4:
                 changeScreenMaterial_5();
@@ -139,6 +143,15 @@ public class SceneManagerScript : MonoBehaviour
     public Material m4_2;
     public Material m4_3;
     public Material m5_1;
+
+    public Material mh_1;
+    public Material mh_2;
+    public Material mh_3;
+    public Material mh_4;
+    public Material mh_5;
+    public Material transp;
+    // 4\5 for the result
+    //screenh.GetComponent<MeshRenderer>().material = material;
 
     void changeScreenMaterial_1()
     {
