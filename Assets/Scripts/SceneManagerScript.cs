@@ -57,7 +57,7 @@ public class SceneManagerScript : MonoBehaviour
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear ^
-                Invoke("SetActive_2", 5);
+                Invoke("SetActive_2", 8);
                 // hand hint appear
                 screenh.GetComponent<MeshRenderer>().material = mh_1;
                 // main object appear ^
@@ -82,7 +82,7 @@ public class SceneManagerScript : MonoBehaviour
                 }
                 ////
                 changeScreenMaterial_3();
-                Invoke("SetActive_3", 11);
+                Invoke("SetActive_3", 8);
                 screenh.GetComponent<MeshRenderer>().material = mh_2;
                 break;
             case 3.1f:
@@ -163,10 +163,10 @@ public class SceneManagerScript : MonoBehaviour
     void changeScreenMaterial_1()
     {
         StartCoroutine(changeMaterialOfScreen(m1_1, 1f));
-        StartCoroutine(changeMaterialOfScreen(m1_2, 4f));
-        StartCoroutine(changeMaterialOfScreen(m1_3, 6f));
-        StartCoroutine(changeMaterialOfScreen(m1_4, 9f));
-        Invoke("changeSceneNum_1", 9f);
+        StartCoroutine(changeMaterialOfScreen(m1_2, 5f));
+        StartCoroutine(changeMaterialOfScreen(m1_3, 15f));
+        StartCoroutine(changeMaterialOfScreen(m1_4, 20f));
+        Invoke("changeSceneNum_1", 20f);
     }
     void changeSceneNum_1() { SCENE_NUMBER = 1.1f; }
 
@@ -174,7 +174,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(changeMaterialOfScreen(m2_1, 1f));
         StartCoroutine(changeMaterialOfScreen(m2_2, 4f));
-        StartCoroutine(changeMaterialOfScreen(m2_3, 6f));
+        StartCoroutine(changeMaterialOfScreen(m2_3, 8f));
     }
 
     void changeScreenMaterial_3()
