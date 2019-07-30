@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - S2OBJ
+  - Upper
+  - Lower
+  - Segment1
+  - Segment4
+  - Segment6
+  - Segment7
+  - Segment8
+  - cut_indicator
   layers:
   - Default
   - TransparentFX

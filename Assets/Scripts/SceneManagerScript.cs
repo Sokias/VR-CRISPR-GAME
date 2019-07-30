@@ -33,6 +33,8 @@ public class SceneManagerScript : MonoBehaviour
     public GameObject obj_s2_9;
     public GameObject obj_s2_10;
     public GameObject obj_s2_11;
+    public GameObject obj_s3_1;
+    public GameObject obj_s3_2;
 
     public void buildScene()
     {
@@ -81,6 +83,9 @@ public class SceneManagerScript : MonoBehaviour
                 obj_s2_9.SetActive(false);
                 obj_s2_10.SetActive(false);
                 obj_s2_11.SetActive(false);
+                ////
+                obj_s3_1.SetActive(true);
+                obj_s3_2.SetActive(true);
                 break;
             default:
                 break;
