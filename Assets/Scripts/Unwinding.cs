@@ -19,6 +19,7 @@ public class Unwinding : MonoBehaviour
     public static void unwindDNASeg(int segNum)
     {
         //Choices of i are confined to 1,4,6,7,8
+        SceneManagerScript.cutNum = segNum;
         GameObject[] gos = GameObject.FindGameObjectsWithTag("Segment" + segNum.ToString());
         foreach (GameObject go in gos) {
             for (int i = 0; i < go.transform.childCount; i++)
@@ -36,5 +37,6 @@ public class Unwinding : MonoBehaviour
                 }
             }
         }
+        SceneManagerScript.SCENE_NUMBER = 3.1f;
     }
 }

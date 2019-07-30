@@ -46,29 +46,13 @@ public class SceneManagerScript : MonoBehaviour
                 SCENE_NUMBER = 1;
                 changeScreenMaterial_1();
                 break;
-            case 1:
-                break;
             case 1.1f:
                 SCENE_NUMBER = 2;
                 changeScreenMaterial_2();
                 // toolbox appear ^
-                obj_s2_1.SetActive(true);
-                obj_s2_2.SetActive(true);
-                obj_s2_3.SetActive(true);
-                obj_s2_4.SetActive(true);
-                obj_s2_5.SetActive(true);
-                obj_s2_6.SetActive(true);
-                obj_s2_7.SetActive(true);
-                obj_s2_8.SetActive(true);
-                obj_s2_9.SetActive(true);
-                obj_s2_10.SetActive(true);
-                obj_s2_11.SetActive(true);
-                S2Button = true;
+                Invoke("SetActive_2", 11);
                 // hand hint appear
                 // main object appear ^
-                break;
-            case 2:
-                // print("2");
                 break;
             case 2.1f:
                 // to 3
@@ -89,12 +73,57 @@ public class SceneManagerScript : MonoBehaviour
                     go.SetActive(false);
                 }
                 ////
-                obj_s3_1.SetActive(true);
-                obj_s3_2.SetActive(true);
+                changeScreenMaterial_3();
+                Invoke("SetActive_3", 11);
+                break;
+            case 3.1f:
+                changeScreenMaterial_4();
+                Invoke("mergeDNA", 10f);
+                break;
+            case 4:
+                changeScreenMaterial_5();
+                SCENE_NUMBER = 4.1f;
+                //show
+
+                //disshow
+                obj_s3_1.SetActive(false);
+                obj_s3_2.SetActive(false);
                 break;
             default:
                 break;
         }
+    }
+
+    public static int cutNum = 0; //can be 1,4,6,7,8
+    void mergeDNA()
+    {
+        switch (cutNum)
+        {
+            // TODO: add the function
+        }
+        SCENE_NUMBER = 4;
+    }
+
+    void SetActice_2()
+    {
+        obj_s2_1.SetActive(true);
+        obj_s2_2.SetActive(true);
+        obj_s2_3.SetActive(true);
+        obj_s2_4.SetActive(true);
+        obj_s2_5.SetActive(true);
+        obj_s2_6.SetActive(true);
+        obj_s2_7.SetActive(true);
+        obj_s2_8.SetActive(true);
+        obj_s2_9.SetActive(true);
+        obj_s2_10.SetActive(true);
+        obj_s2_11.SetActive(true);
+        S2Button = true;
+    }
+
+    void SetActive_3()
+    {
+        obj_s3_1.SetActive(true);
+        obj_s3_2.SetActive(true);
     }
 
     public Material m1_1;
@@ -104,22 +133,46 @@ public class SceneManagerScript : MonoBehaviour
     public Material m2_1;
     public Material m2_2;
     public Material m2_3;
+    public Material m3_1;
+    public Material m3_2;
+    public Material m4_1;
+    public Material m4_2;
+    public Material m4_3;
+    public Material m5_1;
 
     void changeScreenMaterial_1()
     {
-        StartCoroutine(changeMaterialOfScreen(m1_1, 3f));
-        StartCoroutine(changeMaterialOfScreen(m1_2, 6f));
-        StartCoroutine(changeMaterialOfScreen(m1_3, 9f));
-        StartCoroutine(changeMaterialOfScreen(m1_4, 12f));
+        StartCoroutine(changeMaterialOfScreen(m1_1, 1f));
+        StartCoroutine(changeMaterialOfScreen(m1_2, 4f));
+        StartCoroutine(changeMaterialOfScreen(m1_3, 6f));
+        StartCoroutine(changeMaterialOfScreen(m1_4, 9f));
         Invoke("changeSceneNum_1", 13f);
     }
     void changeSceneNum_1() { SCENE_NUMBER = 1.1f; }
 
     void changeScreenMaterial_2()
     {
-        StartCoroutine(changeMaterialOfScreen(m2_1, 3f));
-        StartCoroutine(changeMaterialOfScreen(m2_2, 8f));
-        StartCoroutine(changeMaterialOfScreen(m2_3, 12f));
+        StartCoroutine(changeMaterialOfScreen(m2_1, 1f));
+        StartCoroutine(changeMaterialOfScreen(m2_2, 5f));
+        StartCoroutine(changeMaterialOfScreen(m2_3, 10f));
+    }
+
+    void changeScreenMaterial_3()
+    {
+        StartCoroutine(changeMaterialOfScreen(m3_1, 1f));
+        StartCoroutine(changeMaterialOfScreen(m3_2, 8f));
+    }
+
+    void changeScreenMaterial_4()
+    {
+        StartCoroutine(changeMaterialOfScreen(m4_1, 1f));
+        StartCoroutine(changeMaterialOfScreen(m4_2, 5f));
+        StartCoroutine(changeMaterialOfScreen(m4_3, 9f));
+    }
+
+    void changeScreenMaterial_5()
+    {
+        StartCoroutine(changeMaterialOfScreen(m5_1, 1f));
     }
 
     IEnumerator changeMaterialOfScreen(Material material,float time)
